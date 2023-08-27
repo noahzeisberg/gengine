@@ -1,4 +1,4 @@
-package gengine
+package color
 
 var (
 	Reset     string = "\033[0m"
