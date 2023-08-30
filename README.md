@@ -12,7 +12,7 @@ import (
 )
 ```
 
-Take use of your first util
+Take use of your first util:
 
 ```golang
 logging.Log("Hello, world!")
