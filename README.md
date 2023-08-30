@@ -1,16 +1,21 @@
 # gengine
+
 [![Go Reference](https://pkg.go.dev/badge/github.com/NoahOnFyre/gengine.svg)](https://pkg.go.dev/github.com/NoahOnFyre/gengine)
 
 # Add to your project
+
 Import the package:
-````golang
+
+```golang
 import (
     "github.com/NoahOnFyre/gengine"
 )
-````
+```
 
 Take use of your first util
-````golang
-logging.Log(color.Blue + "Hello, world!")
 
-````
+```golang
+logging.Log("Hello, world!")
+in := logging.Input("Input some text: ")
+logging.Warn(in)
+```
