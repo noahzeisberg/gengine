@@ -7,17 +7,17 @@ import (
 )
 
 func Log(msg ...any) {
-	msg = append(msg, Prefix(0))
+	msg = append(Ar(Prefix(0)), msg...)
 	fmt.Println(msg...)
 }
 
 func Warn(msg ...any) {
-	msg = append(msg, Prefix(1))
+	msg = append(Ar(Prefix(1)), msg...)
 	fmt.Println(msg...)
 }
 
 func Error(msg ...any) {
-	msg = append(msg, Prefix(2))
+	msg = append(Ar(Prefix(2)), msg...)
 	fmt.Println(msg...)
 }
 
@@ -34,4 +34,8 @@ func Input(msg string) string {
 	PrintR(msg)
 	scanner.Scan()
 	return scanner.Text()
+}
+
+func Ar(msg string) []any {
+	return []any{msg}
 }
