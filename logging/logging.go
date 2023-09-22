@@ -4,7 +4,15 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+
+	"github.com/NoahOnFyre/gengine/color"
 )
+
+var mainColor string = color.GreenBg
+
+func SetMainColor(str string) {
+	mainColor = str
+}
 
 func Log(msg ...any) {
 	msg = append(Ar(Prefix(0)), msg...)
