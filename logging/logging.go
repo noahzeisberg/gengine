@@ -47,3 +47,7 @@ func Input(msg string) string {
 func Ar(msg string) []any {
 	return []any{msg}
 }
+
+func Clear() {
+	PrintR("\033[H\033[2J")
+}
